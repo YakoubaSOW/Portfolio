@@ -64,26 +64,32 @@
             </div>
         </section>
 
-        <!-- PROJETS (Format Grille) -->
+        <!-- PROJETS -->
         <section id="{{ projets.id }}" class="section-layout fade-in-up">
             <div class="section-header">
                 <h2><i class="fa-solid fa-code accent-icon"></i> {{ projets.titre }}</h2>
             </div>
-            <div class="projects-grid">
-                <!-- Carte Projet 1 (Exemple visuel) -->
-                <div class="project-card glass-card">
-                    <div class="project-icon"><i class="fa-solid fa-server"></i></div>
-                    <h3>Projet universitaire n.3, S3</h3>
-                    <p>{{ projets.contenu }}</p>
-                    <a href="https://github.com/Hachimohammed/MYSKY_SAE" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            
+            <div class="projects-container">
+                {% for p in projets.liste_projets %}
+                <div class="project-block glass-card">
+                    <div class="project-block-icon">
+                        <i class="fa-solid {{ p.icone }}"></i>
+                    </div>
+                    <div class="project-block-content">
+                        <h3>{{ p.titre }}</h3>
+                        <p>{{ p.contenu | replace('\n', '<br><br>') | safe }}</p>
+                        
+                        <div class="project-tech-tags">
+                            {% for tag in p.tags %}
+                            <span class="tag"><i class="{{ tag.icone }}"></i> {{ tag.nom }}</span>
+                            {% endfor %}
+                        </div>
+                        
+                        <a href="{{ p.lien_github }}" target="_blank" class="btn btn-outline project-btn">Voir le projet sur GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
-                <!-- Carte Projet 2 (Exemple visuel) -->
-                <div class="project-card glass-card">
-                    <div class="project-icon"><i class="fa-solid fa-database"></i></div>
-                    <h3>Projet universitaire n.4, S4</h3>
-                    <p>Développement d'un outil d'analyse avec Python et Pandas.</p>
-                    <a href="https://github.com/yunes-bouabta/S401" class="project-link">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
+                {% endfor %}
             </div>
         </section>
 
