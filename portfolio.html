@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0 0 1rem 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+            scroll-margin-top: 140px; 
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            white-space: pre-line;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yakouba SOW Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#stage">Stage</a></li>
+                <li><a href="#objectifs">Objectifs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="presentation">
+            <h2>Présentation Personnelle</h2>
+            <p>
+                Bonjour, je m'appelle Yakouba SOW et je suis un étudiant en BUT 2 à Université Sorbonne Paris NORD.
+
+                J’ai choisi de m'orienter en informatique plus précisément en développement web car c’est un domaine qui me passionne, développer des site internet et des applications est quelque chose qui me passionne et que j'affectionne a faire au quotidien. A l’avenir j’aimerais travailler en tant que développeur web Full Stack. Mes expériences en stage m'ont permis de découvrir le monde du travail en entreprise, l'environnement dans un cadre professionnel avec des demandes précises et une attente de l’employeur. Tout ce contexte combiné à une utilisation de technologie qui varie selon les entreprises m’ont permis de me faire une idée de ce que je souhaite faire dans mon futur que ce soit dans les choix de technologie utilisé ou secteur de travail visé.
+                
+                Mon projet professionnel est de me former dans mes études et futur stage et alternance pour aller dans le secteur du développement web plus précisément en tant que développeur Back End, mes différentes expériences que ce soit en entreprise ou en projet personnel m’ont fait réaliser que je n’aime pas la passer mon temps à peaufiner la partie graphique et visuel de mes projets, je prend plus de plaisir à développer des fonctionnalités. Je cherche encore à trouver le ou les langages de programmation qui vont vraiment me plaire et me donner l’envie de travailler avec pendant plusieurs années mais pour l’instant j’ai le sentiment que pour un développeur les langages de programmation qui vont le plus apporté que ce soit en terme de facilité à trouver un emploi et des revenue en terme de salaire sont Python notamment dans la partie de data et d’intelligence artificiel, Typescript et React JS. C’est potentiellement ces langages que je vais choisir et commencer à vraiment me spécialiser avec.
+                
+                En qualités personnelles, j’ai acquis une capacité à travailler en groupe, les projet personnels qu’on a dû effectuer en groupe et mon stage m’ont donné l’opportunité à travailler en collectif, des projet avec des gens que je connaissais déjà et aussi avec des gens que je ne connaissais pas, cela pousse à créer de la communication et de l'entraide pour une réussite collectif.
+                
+                Cette année de BUT 2 m’a donné l’envie de plus renforcer les compétences que j’avais déjà acquis par le passé et travailler de nouvelles compétences, j’ai l’envie d’être un bien meilleure développeur web et de vraiment réussir dans ce domaine, mon stage m’a ouvert les yeux sur ce que j’aime et n’aime pas, ce que je souhaite vraiment faire plus tard et du travail personnel que je dois apporté afin d’atteindre cette objectif, techniquement et même mentalement, je dois m'améliorer et être bien meilleure pour me faciliter l'accès à cette objectif que je convoite qui est d’être un développeur aguerrie et complet pour avoir les meilleures opportunité à l’avenir.
+            </p>
+        </section>
+
+        <section id="projets">
+            <h2>Bilan de mes Projets Universitaire</h2>
+            <p>
+                Ici, tu peux détailler les projets sur lesquels tu as travaillé, les compétences que tu as développées et les résultats obtenus.
+            </p>
+        </section>
+
+        <section id="stage">
+            <h2>Bilan de mon Stage</h2>
+            <p>
+                Pour ce stage, j’ai travaillé dans le service informatique d’une entreprise de flocage et de textile et comme mission, j’ai développer de nouvelles fonctionnalités pour le site de l’entreprise, avoir un visuel sur les factures avec des tableau et graphique, une page de suivi sur la livraison des colis qu’il effectue pour leurs clients ou encore une page de gestion de leurs logo qu’il réalise pour le flocage et la broderie des vêtements pour les clients. ça a été un stage particulier pour moi, les méthode de travail de l’entreprise était peu spécial, être plusieurs dans la même pièce à travailler sur la même table toute la journée m’a un peu perturbé mais cela reste tout de même une expérience de travaille à en tirer. La communication en entreprise est quelque chose de crucial, communiquer avec mes collègues stagiaires m’a beaucoup aidé pour résoudre les problèmes que je rencontrais lors de la réalisation de mes tâches.
+                Sur les compétences techniques, ce stage m’a permis de coder avec le langage de programmation PHP que je connaissais déjà mais avec un méthode différente, la méthode PDO, j’ai appris à coder avec la méthode PDO et implémenter mon code avec la technique AJAX pour que mes requêtes soient plus fluide. Les 8 semaines de pratique m’ont vraiment permis de renforcer mes compétences et permis de découvrir de nouvelle manière de coder afin que ce soit plus fluide et efficace. Les missions que l’entreprise m’a confiées ont été réalisées avec succès.
+                Sur les compétences transversales, ce stage m’a permis de plus communiquer avec les autres, la communication a été essentielle pour la réussite de mes missions. Malgré le fait qu’on n'était pas sur les mêmes missions, mes collègues stagiaires m’ont été d’une grande aide pour résoudre les points de blocages que je rencontrais pendant ce stage. Sans eux, le stage aurait été plus compliqué et même sur l'aspect de l’ambiance, c’est plus agréable de travailler avec des personnes avec qui on peut communiquer.
+
+            </p>
+        </section>
+
+        <section id="objectifs">
+            <h2>Mes Objectifs</h2>
+            <p>
+                Mes objectifs sont dans un premier temps de valider mon BUT informatique, j’aimerais bien pour mon stage de troisième années faire un stage en Typescript pour voir si c’est vraiment un langage qui puisse me plaire pour mon futur, j’ai passer beaucoup de temps à faire des recherche sur le langage et les débouchés que ça peut m’apporter de me spécialiser sur ce langage, il ne manque plus que de l'expérience en entreprise avec ce langage pour me fixer sur ça puis.
+                Par la suite, j’aimerais continuer mes études vers un Master, je ne sais pas encore quel Master précisément mais je ne souhaite pas m'arrêter avec un BAC +3, je veux mettre le plus de chance de mon côté pour trouver un bon emploi en fin d’étude même si ça va me prendre plus de temps, un BAC +5 serait l’idéal pour moi. Comme pour le stage de troisième années, une alternance avec une entreprise qui code en Typescript serait l'idéal, avoir plus d'expériences et de compétences sur ce langage serait bénéfique pour moi.
+                En sortie d’études, un emploi en tant que Développeur Web Full Stack est certainement la voie que je prendre, je ne sais pas encore sur quel langage et avec quel technologie, je prendrai le temps de me fixer là dessus avec mes expériences professionnel et recherche personnel.
+                Je ne sais pas si c’est quelque chose que je vais faire toute ma vie, je ne suis pas le genre de personne qui prévoit son futur sur du long terme, je pense que mes expériences en étude et post étude vont m’aider sur ce point mais ce qui est sûr, c’est qu'à l'heure actuelle, je me vois continuer dans le monde du  développement car coder est vraiment quelque chose que j’aime faire.
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2026 - Portfolio créé par Yakouba SOW</p>
+    </footer>
+
+</body>
+</html>
